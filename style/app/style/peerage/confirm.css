@@ -1,0 +1,303 @@
+﻿/*通用类*/
+*{
+	margin:0;		
+	padding:0;
+}
+
+/*兼容老设备的rem-px基准*/
+html{
+	font-size:42.6667px;	
+}
+@media screen and (max-width: 320px){ 
+  html{
+  	font-size:42.6667px;
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 360px){ 
+  html{
+  	font-size:48px;
+  }
+}
+@media screen and (min-width: 361px) and (max-width: 375px){ 
+  html{
+  	font-size:50px;
+  }
+}
+@media screen and (min-width: 376px) and (max-width: 414px){ 
+  html{
+  	font-size:55px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 484px){ 
+  html{
+  	font-size:64px;
+  }
+}
+@media screen and (min-width: 485px) and (max-width: 720px){ 
+  html{
+  	font-size:96px;
+  }
+}
+@media screen and (min-width: 721px) and (max-width: 768px){ 
+  html{
+  	font-size:102px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1080px){ 
+  html{
+  	font-size:144px;
+  }
+}
+@media screen and (min-width: 1080px){ 
+  html{
+  	font-size:144px;
+  }
+}
+/*新设备的rem-vw标准*/
+html{	
+	overflow-x:hidden;
+	font-size:13.3333333333vw;	/*一便rem.js失效，这里起作用*/
+}
+
+body{		
+	width:100%;	
+	min-width:320px;
+	min-height: 100vh;
+	margin:0 auto;	
+	font-family:PingFang SC,Hiragino Sans GB,Microsoft YaHei UI,Microsoft YaHei,Source Han Sans CN,sans-serif;
+	background:#f3f3f3;
+	overflow-x:hidden;
+	text-align:left;	
+	position:relative;
+	font-size:0.26rem;
+	color:#333;
+}
+.wb{
+	background:#fff;
+}
+
+img{
+	border:none;	
+}
+h1,h2,h3{
+	font-weight:normal;	
+}
+a{
+	color:#333;
+	text-decoration:none;	
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-tap-highlight-color:transparent;
+	outline:none
+}
+input,textarea,select{
+	font-family:PingFang SC,Hiragino Sans GB,Microsoft YaHei UI,Microsoft YaHei,Source Han Sans CN,sans-serif;
+	font-size:1em;
+	outline:none;
+	margin:0;
+	padding:0;
+}
+input::-webkit-input-placeholder {
+	color: #999 !important;
+}
+textarea::-webkit-input-placeholder {
+	color: #999 !important;
+}
+input[type='button'],input[type='text'],input[type='search'], input[type='submit'], input[type='reset'],input[type='date'],input[type='time'],input[type='number'] {
+	-webkit-appearance: none;
+}
+select{
+	-webkit-appearance: none;	
+}
+textarea{ 
+	-webkit-appearance: none;
+}
+input::-webkit-outer-spin-button,input::-webkit-inner-spin-button{
+    -webkit-appearance: none !important;
+    margin: 0;
+}
+ul,ol{
+	padding:0;
+	list-style-type:none;	
+}
+em{
+	font-style:normal;	
+}
+.lt{
+	float:left;	
+}
+.rt{
+	float:right;	
+}
+input.sub,label{
+	border:none;	
+	cursor:pointer;
+}
+input,textarea{
+	font-family:PingFang SC,Hiragino Sans GB,Microsoft YaHei UI,Microsoft YaHei,Source Han Sans CN,sans-serif;
+	outline:none;	
+	margin:0;
+	padding:0;
+}
+table{
+	border-collapse:collapse;	
+}
+td,th{
+	padding:0;	
+}
+div.clear{
+	font: 0px Arial; line-height:0;
+	height:0; 
+	overflow:hidden;	
+	clear:both;	
+}
+.cm_photo{
+	display:block;
+	position:relative;
+	overflow:hidden;	
+}
+.cm_photo .thumb{
+	display:block;
+	width:100%;
+	height:100%;
+	position:absolute;
+	left:0;
+	top:0;
+	z-index:10;	
+}
+.cm_photo .zw{
+	display:block;
+	height:auto;	
+	width:100%;
+}
+
+
+.banner{
+	width:100%;
+}
+.banner .swiper-slide{
+	width:100%;
+}
+.banner .swiper-slide img{
+	display: block;
+	width:100%;
+	height:auto;
+}
+.banner .swiper-pagination-bullet{
+	opacity:1;
+	background:#ccc;
+}
+.banner .swiper-pagination-bullet-active{
+	background:#d43e35;
+}
+
+/*公用 CSS*/
+.sp_banner{
+	height: 2.3rem;
+	background:url("../../images/peerage/spbanner.jpg") no-repeat center center;
+	background-size:100% 100%;
+	position: relative;
+	box-sizing:border-box;
+	
+}
+.head { position:relative; text-align:center; line-height:0.8rem; color:#fff; font-size:0.35rem;}  
+.sp_banner .backa{
+	display: block;
+	width: 0.8rem;
+	height: 0.8rem;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background:url("../../images/peerage/spback.png") no-repeat center center;
+	background-size:0.2rem auto;
+}
+.personal { padding-top: 0.5rem;}
+.sp_banner .face{
+	display: block;
+	width: 1.2rem;
+	height: 1.2rem;
+	border:3px solid #fff;
+	border-radius:100%;
+	position: relative;
+	overflow: hidden;
+	margin-left:0.48rem;
+	float: left;
+}
+.sp_banner .face img{
+	display:block;
+	width:100%;
+	height:100%;
+	object-fit:cover;
+}
+.sp_us{
+	float: left;
+	padding:0 0 0 0.5rem;
+}
+.sp_us .name{
+	height: 0.8rem;
+	line-height: 0.8rem;
+	font-size:0.35rem;
+	color:#fff;
+}
+.sp_us .name p { float:left}
+.sp_us .zuan{
+	display: block;
+	width: 0.28rem;
+	float: left;
+	margin-top:3px;
+}
+.sp_us .lv{
+	display: inline-block;
+	height: 0.36rem;
+	line-height: 0.36rem;
+	padding:0 0.13rem;
+	border-radius:0.36rem;
+	background: linear-gradient(#ce68f8, #b937d9); /* 标准的语法 */
+	margin:0.02rem 0 0 0.15rem;
+	color:#fff;
+	font-size:0.2rem;
+	position:relative;
+	padding-left:0.38rem;
+}
+.sp_us .lv img { height:0.30rem; position:absolute; top:1px; left:3px;}
+.name .ln img { height:0.36rem;}
+.name .ln  { display: inline-block;
+	height: 0.36rem;
+	line-height: 0.36rem;
+	padding:0 0.1rem;position:relative; }
+.money span { color:#fff; margin-left:5px; }
+.sp_list {margin-top:0.25rem; background:#fff;}
+.sp_list li{padding:0.25rem; font-size:0.30rem; border-bottom:1px solid #ccc}
+.sp_list li span { color:#a8a8a8;}
+.sp_list li .js_z { height:0.5rem; position:relative; top:7px;}
+.sp_list li p {font-size:0.24rem; color:#a8a8a8}
+.fs  {position:relative}
+.fs img {height:0.5rem; float:left; margin-top:0.13rem}
+.fs .word {float:left; margin-left:0.2rem;}
+.fs .word h3 { font-size:0.3rem; margin-bottom:3px;}
+.sel{
+	position: absolute;
+	top: 50%;
+	margin-top:-0.3rem;
+	right: 0.25rem;
+	margin-left:-0.09rem;
+}
+.sel, .selall{
+	display: block;
+	width: 0.6rem;
+	height: 0.6rem;
+	background:url("../../images/peerage/sel1.png") no-repeat left top;
+	background-size:auto 200%;
+}
+ .selhover{
+	background-position:left bottom;
+}
+.cm_Should { margin:0.1rem 0.25rem;}
+.Should { color:#333; font-size:0.3rem; display:inline-block}
+.Should .chip { color:#e92e73; display:inline-block}
+.Should .chip span { font-size:0.35rem;}
+.Should_rt { float:right; color:#e92e73}
+.cm_Should p { color:#787878; font-size:0.24rem; margin-top:3px;}
+.cm_Should p img { height:0.24rem; position:relative; top:2px; margin-right:0.1rem;}
+.cm_Should p a {color:#5ebbdc}
+.payment_butt { text-align:center; margin:0 auto; margin-top:1rem;}
+.payment_butt button {width:65%; line-height:0.9rem; color:#fff; font-size:0.4rem; background: linear-gradient(to right, #fe367f , #fe7f48); /* 标准的语法 */ border:0px; border-radius:0.9rem;}
