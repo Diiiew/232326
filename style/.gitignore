@@ -1,0 +1,12 @@
+rollpic/*
+!rollpic/index.html
+avatar/*
+!avatar/0
+snap/*
+!snap/index.html
+Uploads/*
+userVideo/*
+vote/*
+leafletpic/*
+!leafletpic/index.html
+.idea

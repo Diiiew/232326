@@ -1,0 +1,184 @@
+html, body, div,section, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, dd, dl, dt, li, ol, ul,input,select,button,textarea { padding:0; margin:0; border:none;box-sizing:border-box;-moz-box-sizing:border-box; /* Firefox */-webkit-box-sizing:border-box;}
+input,button,select,textarea,a,img{outline:none; text-decoration:none;color:#333;}/*去掉超链接或按钮点击时出现的虚线框黄色边框*/
+::-moz-focus-inner{border:0px;}/*火狐的私有属性去掉点击时边框*/
+body {font-size:14px; font-family:"Microsoft YaHei","Arial", "SimSun";}
+html,body{ width:100%;height:100%;}
+a img { border:none;}
+ul, ul li, ol li, li {  list-style:none;}
+table { border-collapse: collapse;border-spacing:0;}
+input, textarea {border: 0;vertical-align: middle;}
+.clearfix:after {visibility: hidden;display: block;font-size: 0;content: ".";clear: both;height: 0;}
+* html .clearfix {zoom: 1;}
+*:first-child + html .clearfix {zoom: 1;}
+.fl {   float:left;}
+.fr {   float:right;}
+.none{  display:none;}
+.elip{white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+
+.h_main{margin-top:5%;}
+.h_body{width:1065px;height:570px;padding:20px 30px;margin:0 auto;background:#fff;border-radius:5px;}
+.h_body_left{width:700px;float:left;}
+.h_title{height:35px;line-height:35px;font-size:12px;}
+.h_title img{vertical-align: middle;width:20px;margin-top:-3px;margin-right:5px;}
+.h_body_anchor{width:100%;height:490px;overflow:hidden;}
+.h_anchor{width:20%;float:left;padding-right:15px;margin-bottom:10px;cursor: pointer;}
+.h_anchor_img img{width:100%;height:125px;border-radius:8px;}
+.h_anchor p{margin-top:5px;font-size:12px;}
+.h_anchor .h_online{color:#828282;}
+.h_body_right{position:relative;width:300px;height:100%;float: right;}
+.h_body_video{width:100%;height:100%;background:#000;}
+.h_body_opc{position:absolute;top:0;left:0;z-index:1;width:100%;height:100%;background:rgba(0,0,0,0.5);}
+.h_body_button{position:absolute;top:45%;left:50%;margin-left:-50px;display: inline-block;width:100px;height:30px;font-size:14px;line-height:30px;text-align:center;border:1px solid #ff4d96;color:#ff4d96;border-radius:30px;transition: all 0.4s linear;-webkit-transition: all 0.4s linear;-moz-transition: all 0.4s linear;}
+.h_body_button:hover{background:#ff4d96;color:#fff;}
+
+.h_header{width:1065px;padding:20px 0;margin:0 auto;}
+.headbg{background: url(/style/meilibo/vzboostyle/img/icon.png) no-repeat;}
+.h_live_button{position:relative;display: block;}
+.h_live_button .h_go_live{display:block;width: 34px;height:34px;}
+.h_live_button .h_go_live.headbg{background-position:-10px -301px;}
+.h_live-tip{display:none;position:absolute;top:38px;left:-20px;width:70px;height:38px;border-radius:4px;background:#F3456E;color:#fff;text-align: center;font-size:14px;line-height:38px;cursor: pointer;}
+.h_live-tip:before{display:block;content:"";position:absolute;top:-4px;right:30px;display:inline-block;width:7px;height:7px;border:1px solid #F3456E;border-right:none;border-bottom:none;background:#F3456E;-webkit-transform:rotate(45deg);transform:rotate(45deg)}
+.h_live_button:hover .h_live-tip{display: block;}
+.h_down_box{position: relative;height:38px;line-height:38px;}
+.h_down_box span{color:#fff;cursor: pointer;}
+.h_login_button{height:38px;line-height:38px;padding:0 10px;margin-left:10px;color:#fff;background:transparent;cursor: pointer;}
+.h_down_app{width:120px;position: absolute;top:38px;left:-28px;z-index: 1;}
+.h_down_app img{display:block;width: 100%;}
+.h_down_app:before{display:block;content:"";position:absolute;top:-4px;right:55px;display:inline-block;width:7px;height:7px;border:1px solid #fff;border-right:none;border-bottom:none;background:#fff;-webkit-transform:rotate(45deg);transform:rotate(45deg)}
+
+.layer{position:fixed;top:0;left:0;z-index:998;overflow-y:auto;width:100%;height:100%;background:#333;background:rgba(0,0,0,.5)}
+.layer .layer-window-content{display:table;margin-right:auto;margin-left:auto;height:100%}
+.layer .layer-window-content .layer-box{position:relative;display:table-cell;margin-right:auto;margin-left:auto;max-height:100%;vertical-align:middle}
+.layer .closeLayer{position:absolute;top:30px;right:30px;display:inline-block;width:30px;height:30px;background:url(../img/close.png);cursor:pointer}
+@media screen and (max-width:1400px) and (max-height:700px){
+  .h_main{margin-top:0;}
+  .h_body{height:500px;}
+  .h_body_anchor{height: 420px;}
+}
+/*登录注册*/
+.logins_box{position:fixed;top:50%;left:50%;margin-left:-315px;margin-top:-212px;z-index:99;width:620px;background:url(/style/meilibo/images/dz_bg.jpg) no-repeat left top #fff;border-radius:7px;overflow: hidden;}
+.logins_box .loginsTab{height:80px;margin-bottom:-1px;}
+.logins_box .loginsTab span{display:inline-block;height:38px;float:left;padding:0 15px;font:normal 18px/38px "Microsoft Yahei";color:#636363;cursor: pointer;}
+.logins_box .loginsTab span.on,.loginsTab span:hover{border-bottom:1px solid #f60;color:#f60;}
+.logins_box .login_b{width:620px;padding-top:27px;border:2px solid #ce45ec;border-radius:0 0 7px 7px;border-top:0;padding-bottom:15px;}
+.logins_box .login_left{float:left;padding-left:45px;overflow: hidden;}
+.logins_box .login_left > a{display:block;margin-bottom:10px;overflow:hidden;border-radius:5px;}
+.logins_box .login_left p{font:normal 14px "Microsoft Yahei";margin-bottom:20px;color:#333;}
+.logins_box .login_left .login_zc{height:58px;width:205px;margin-bottom:10px;background:#B73FF0;color:#fff;font:normal 16px/58px "Microsoft Yahei";text-align: center;}
+.logins_box .login_left .loginBtn{height:60px;width:60px;float:left;margin:0 10px;border-radius:50%;font:normal 14px/40px "Microsoft Yahei";background:url(/style/meilibo/images/login_ico_v4.png) no-repeat #f4f5f5;}
+.logins_box .login_left .QQlogin{background-position:0px -86px;}
+.logins_box .login_left .WXlogin{background-position:-60px -85px;}
+.logins_box .login_left .QQlogin:hover{background-color:#4cbef8;background-position:-0px -5px;}
+.logins_box .login_left .WXlogin:hover{background-color:#5de165;background-position:-60px -5px;}
+
+
+.logins_box .otherLogin span{margin:0 5px;vertical-align:middle;color:#c2c2c2;font:normal 12px/18px "Microsoft Yahei";}
+.logins_box .login_newIcon{display:inline-block;width:21px;height:18px;background:url(/style/meilibo/images/newLoginIcon.png) no-repeat;vertical-align: middle;overflow: hidden;}
+.logins_box .sinalogin{background-position: 0 -136px;}
+.logins_box .threelogin{background-position: -26px -136px;}
+.logins_box .login_rigt{}
+.logins_box .login_form{margin-top:-25px;width:295px;float:right;padding-left:32px;border-left:1px solid #eee;}
+.logins_box .login_form .li{position:relative;height:36px;margin-top:25px;}
+.logins_box .text_input{width:208px;height:34px;line-height:34px;float:left;padding:0 3px 0 10px;background:#fff;border:1px solid #BEBEBE;border-radius:3px;line-height:34px \9;font:normal 12px "Microsoft Yahei";color:#9D9D9D;vertical-align:middle;}
+.logins_box .checkbox_input{width:14px;height:14px;color:#F09;border-radius: 2px;vertical-align:middle;float:left;}
+.logins_box .login_form .radio{height:18px;margin-top:10px;font-size:12px;}
+.logins_box .radio span{margin-left: 5px;color:#999;display:block;height:18px;overflow:hidden;}
+.logins_box .radio a{display:inline-block;width:80px;padding-left:5px;margin-left:5px;text-decoration: underline;color:gray;}
+.logins_box .login_form .btn{margin-top:15px;}
+.logins_box .btn input{display:inline-block;padding:0 40px;height:40px;border:0;background:#ff4974;color:#fff;cursor:pointer;font:normal 16px/40px "Microsoft Yahei";}
+.logins_box .btn input:hover{background-color:#EB3E67;}
+.logins_box .dynamic img{float:left;width:94px;height:34px;border:1px solid #ccc;margin-left:15px;cursor: pointer;vertical-align:middle;}
+.reloadImg{display:inline-block;width:40px;margin:0 10px;color:#c2c2c2;}
+.reloadImg:hover{color:#FA265D;}
+.logins_box .radio .useragreement{display:block;width:224px;height:18px;overflow:hidden;margin:0;padding:0;color:#3091f5;text-decoration: none;}
+.logins_box .loginsTab .login_close{position:absolute;right:0;top:0;display:block;width:35px;height:35px;padding:12px 0 0 12px;}
+.logins_box .loginsTab .login_close em{display:block;width:23px;height:23px;background:url(/style/meilibo/images/close.png) no-repeat center;}
+.jmlfalsebox{z-index:500;width:250px;height:26px;position:absolute;overflow:hidden;left:0px;top:-26px;}
+.jmlfalsebox .jmlicon01{width:210px;height:14px;padding-left:20px;float:left;margin-top:7px;margin-right:4px;background:url(/style/meilibo/images/reg1.jpg) no-repeat;}
+.jmlfalsebox .jmlicon02{width:210px;height:14px;padding-left:20px;float:left;margin-top:7px;margin-right:4px;background:url(/style/meilibo/images/reg2.jpg) no-repeat;}
+.jmlfalsebox .jmlicon_empty{width:14px;height:14px;float:left;margin-top:7px;margin-right:4px;}
+.jmlfalse{width:250px;height:26px;line-height:26px;color:#676767;font-family:"SimSun";}
+.jmlfalsecon{border-left:0;width:210px;height:26px;}
+#name_false2 .jmlfalsecon{padding-left:20px;background:url(/style/meilibo/images/reg1.jpg) no-repeat 0;}
+
+.impowerBox{display:none;}
+.impowerBox .title{height:45px;line-height:45px;text-align:center;font-size:20px;}
+.impowerBox .panelContent{text-align:center;}
+.impowerBox .info{font-size:14px;}
+
+/*登录注册*/
+
+.account-box-childern{position:relative;top:3px;display:inline-block;margin-left:10px;float:left;width:100px;}
+.account-box-childern .avatar{float:left;width:34px;height:34px;margin-left:10px;-webkit-border-radius:34px;-moz-border-radius:34px;border-radius:34px;cursor:pointer;-ms-border-radius:34px;-o-border-radius:34px}
+.account-box-childern .goPay{float: left;cursor: pointer;}
+.account-box-childern .goToPay{width:34px;height:34px;}
+.account-info-box{position:absolute;top:38px;right:15px;z-index:9999;width:180px;border-radius:3px;background:#fff;box-shadow:0 1px 6px rgba(100,100,100,.3)}
+.account-info-box .account-pro{margin:0 10px;padding:10px 0;border-bottom:1px solid #ccc}
+.account-info-box .account-pro .account-momoid{margin-left:45px;color:#b4b3b3;font-size:12px}
+.account-info-box .account-pro .username{float:none;overflow:hidden;padding-left:10px;max-width:120px;text-overflow:ellipsis;white-space:nowrap;font-size:14px}
+.account-info-box .account-list .account-item{padding-left:10px;height:40px;color:#868686;font-size:14px;line-height:40px;cursor:pointer}
+.account-info-box .account-list .account-item:hover{background:#f7f8f8}
+.account-box-childern .goPay .iWantPay{position:absolute;top:42px;left:-18px;z-index:200;display:none;width:70px;height:38px;border-radius:4px;background:#ff7a29;color:#fff;text-align:center;font-size:14px;line-height:38px;cursor:pointer}
+.account-box-childern .goPay .iWantPay:before{position:absolute;top:-4px;right:30px;display:inline-block;width:7px;height:7px;content:"";border:1px solid #ff7a29;border-right:none;border-bottom:none;background:#ff7a29;-webkit-transform:rotate(45deg);transform:rotate(45deg)}
+.account-box-childern .goPay:hover .iWantPay{display: block;}
+
+.profile-box{position:relative;width:450px;height:625px;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;background:#fff;-ms-border-radius:5px;-o-border-radius:5px;text-align:center;}
+.profile-box .background-content{overflow:hidden;height:240px;border-top-right-radius:5px;border-top-left-radius:5px}
+.profile-box .background-content img.bg-img{width: 100%;}
+.profile-box .main-info-content{position:absolute;top:0;padding-top:40px;width:100%;height:240px;background:rgba(0,0,0,.2);color:#fff;text-align:center}
+.profile-box .main-info-content > img{width:90px;height:90px;-webkit-border-radius:1000px;-moz-border-radius:1000px;border-radius:1000px;-ms-border-radius:1000px;-o-border-radius:1000px}
+.profile-box .main-info-content p.profile-name{margin-top:5px;font-size:18px;}
+.profile-box .main-info-content p.constellation{margin-top:2px;font-size:14px;}
+.profile-box .main-info-content p.profile-info{margin-top:10px;}
+/*.profile-box span.info.gender.male{background:#46a1ff;}*/
+.profile-box .icon-female,.icon-male{position:relative;display:block;width:12px;height:12px;cursor:pointer}
+.profile-box .icon-male{background: url(/style/meilibo/vzboostyle/img/icon.png?v=6) -73px -523px no-repeat;}
+.profile-box span.info.gender i{display:inline-block;width:100%;height:100%;float: left;}
+.profile-box span.info.gender i.icon-male{background: url(/style/meilibo/vzboostyle/img/sex-female.png) no-repeat center;}
+.profile-box span.info.gender i.icon-fomale{background: url(/style/meilibo/vzboostyle/img/sex-male.png) no-repeat center;}
+.profile-box span.info{display:inline-block;width:47px;height:17px;border-radius:2px;vertical-align:bottom;font-size:12px}
+.profile-box .main-info-content span.info.vip{width:40px;height:17px;}
+.profile-box .profiles-tab .tab_header{padding:0 20px;}
+.profile-box .tab_header>ul{padding:relative;}
+.profile-box .tab_header>ul>li{position:relative;float:left;display:inline-block;width:100%}
+.profile-box .tab_header>ul>li>a{display:block;margin-top:5px;padding:0;height:44px;color:#12aef5;text-align:center;font-size:16px;line-height:44px;border-bottom:2px solid #12aef5}
+.profile-box .profile-detials-content{margin-right:3px;padding-left:20px;}
+.profile-box .tab_content_container .tab_content .profiles-list:first-child{padding-top:15px;}
+.profile-box .profile-detials-content .profiles-list .profile-item{margin-bottom: 9px;font-size:14px;}
+.profile-box .profile-detials-content .profiles-list .profile-item span.item-title{float:left;display:inline-block;margin-right:40px;width:64px;text-align:right}
+.profile-box .profile-detials-content .profiles-list .profile-item span.item-value{display:inline-block;float:left;overflow:hidden;max-width:275px;color:#8e8e8e;text-overflow:ellipsis;white-space:nowrap}
+.profile-box .profile-detials-content .profiles-list .profile-item span.radio_money{margin-right:10px;float:left;font-size:12px;}
+#category{height:30px;line-height:30px;border-radius:4px;padding:0 5px;font-size:12px;border:1px solid #ddd;margin-right:10px;vertical-align: middle;}
+.categorybox span{display:inline-block;height:30px;line-height:30px;vertical-align: middle;}
+.categorybox span i{color:#ff2d55;padding:0 5px;font-style: normal;}
+
+.profile-box.payment{height:430px;}
+.payment .tab_content_container{height:100%;}
+.radio-button{display:inline-block;float:left;width:100px;height:32px;padding:5px 10px;margin-right:5px;background:#f2f2f2;border:1px solid #eee;border-radius:3px;cursor:pointer;}
+.radio-button.active{background:url(/style/meilibo/vzboostyle/img/sprite1x.df961136.png) no-repeat right bottom;border-color:#238efb;}
+.radio-button .icon{display:block;width:66px;height:22px;}
+.radio-button .icon-weix{background:url(/style/meilibo/vzboostyle/img/weix.jpg) no-repeat center;background-size:66px 19px;}
+.radio-button .icon-zfb{background:url(/style/meilibo/vzboostyle/img/zfb.jpg) no-repeat center;background-size:66px 19px;}
+.radio-button .icon-wy{background:url(/style/meilibo/vzboostyle/img/wy.jpg) no-repeat center;background-size:66px 19px;}
+.profiles-list .profile-item .form-control{float:left;display:inline-block;width:190px;height:34px;padding:6px 12px;font-size:12px;line-height:34px;background:#fff;border:1px solid #ccc;border-radius:4px;}
+.amount-wrapper .unit{width:34px;height:34px;line-height:34px;float:left;text-align:center;}
+.payment .single-sign{line-height:34px;}
+.paymentbtn{display:inline-block;float:left;margin-left:104px;width:150px;height:35px;border:1px solid #ff2d55;border-radius:5px;color:#ff2d55;text-align:center;line-height:35px;font-size:16px;cursor:pointer;}
+.payment .pay-wxin{padding-left:0;}
+.payment .pay-wxin li{text-align:center;}
+.payment .wxin-tit{padding:20px 0 0px;text-align:center;font-size:26px;}
+.payment .wxin-ewm{height:190px;}
+.pay-wxin .w-tip{margin:10px auto 22px;width:145px;background:url(/style/meilibo/vzboostyle/img/pay_04.png) no-repeat;padding-left:30px;color:#8a8a8a;}
+.pay-wxin .wxin-table{margin:0 auto;}
+.payment .profiles-list .profile-item{height:38px;line-height:38px;}
+
+.video-js{width: 100%;height:100%;}
+
+.h_footer{position:absolute;bottom:0;left:0;width:100%;padding:10px 0;text-align:center;color:#d4d1d1;font-size:14px;}
+
+
+
+
+
+
+

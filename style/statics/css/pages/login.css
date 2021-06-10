@@ -1,0 +1,166 @@
+div {
+  overflow: hidden;
+  *display: inline-block;
+}
+div {
+  *display: block;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Microsoft Yahei";
+}
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: ".";
+  clear: both;
+  height: 0;
+}
+body {
+  background: url("/style/statics/images/admin_img/bg.jpg");
+}
+#dlk {
+  background: #000;
+  filter: Alpha(opacity: 50);
+  opacity: 0.5;
+  -o-opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#logo {
+  background: #000;
+  filter: Alpha(opacity: 80);
+  opacity: 0.8;
+  -o-opacity: 0.8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  color: #fff;
+  line-height: 50px;
+  font-family: "Microsoft Yahei";
+  font-size: 24px;
+}
+#logo img {
+  display: block;
+  float: left;
+  margin: 15px 10px 0 200px;
+}
+#bor {
+  width: 840px;
+  height: 470px;
+  background: #000;
+  padding: 5px;
+  position: absolute;
+  top: 80px;
+  left: 255px;
+  filter: Alpha(opacity: 50);
+  opacity: 0.5;
+  -o-opacity: 0.5;
+  border-radius: 5px;
+}
+#con {
+  width: 760px;
+  height: 430px;
+  background: #fff;
+  position: absolute;
+  top: 85px;
+  left: 260px;
+  padding: 40px 40px 0;
+  border-radius: 5px;
+}
+#con .con_l {
+  width: 379px;
+  height: 350px;
+  float: left;
+  border-right: 1px solid #ddd;
+}
+#con .con_l img {
+  margin: 20px auto 0;
+  display: block;
+}
+#con .con_l h3 {
+  color: #3e4146;
+  padding-top: 30px;
+  text-align: center;
+}
+#con .con_l p {
+  font-size: 12px;
+  color: #c5c6c9;
+  line-height: 40px;
+  text-align: center;
+}
+#con .con_r {
+  width: 380px;
+  height: 350px;
+  float: right;
+}
+#con .con_r h2 {
+  font-weight: normal;
+  text-indent: 35px;
+}
+#con .con_r p.bd {
+  position: relative;
+}
+#con .con_r p.bd input.txt {
+  width: 285px;
+  height: 42px;
+  margin: 25px 0 0 35px;
+  border: 1px solid #dbdbdb;
+  padding-left: 55px;
+  border-radius: 5px;
+}
+#con .con_r p.bd label {
+  position: absolute;
+  top: 38px;
+  left: 90px;
+  color: #ddd;
+  font-size: 12px;
+}
+#con .con_r p.chk {
+  height: 20px;
+  margin-top: 20px;
+  line-height: 20px;
+}
+#con .con_r p.chk label {
+  float: right;
+  font-size: 12px;
+  color: #ddd;
+}
+#con .con_r p.chk input {
+  margin-right: 5px;
+}
+#con .con_r p input.tj {
+  width: 340px;
+  height: 40px;
+  margin: 25px 0 0 35px;
+  background: #5882f7;
+  border: 0px;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.bdbg {
+  position: absolute;
+  top: 26px;
+  left: 36px;
+  display: block;
+  width: 45px;
+  height: 40px;
+  border-radius: 4px 0 0 4px;
+}
+.userbg {
+  background: url("/style/statics/images/admin_img/yh.jpg") no-repeat center
+    #fff;
+}
+.pwdbg {
+  background: url("/style/statics/images/admin_img/mm.jpg") no-repeat center
+    #fff;
+}
