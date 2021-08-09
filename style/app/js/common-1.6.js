@@ -51,8 +51,8 @@ function call_native_func_data(method, params) {
     if (navigator.userAgent.match(/ipad|ipod|iphone/i)) {
         var ver = getUrlVars()['ver'];
         if(!ver
-            || (ver > '1.0.0' && ver < '1.3.8')
-            || (ver > '2.0.0' && ver < '2.3.8')){
+            || (ver > '1.00.0' && ver < '1.03.8')
+            || (ver > '2.00.0' && ver < '2.03.8')){
             return null;
         }
 
